@@ -278,7 +278,7 @@ impl Proxy {
         }))
     }
 
-    pub(crate) fn system() -> Proxy {
+    pub fn system() -> Proxy {
         let mut proxy = Proxy::new(Intercept::System(Arc::new(get_sys_proxies(
             get_from_platform(),
         ))));
